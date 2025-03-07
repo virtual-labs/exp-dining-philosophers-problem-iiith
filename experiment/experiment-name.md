@@ -1,1 +1,1 @@
-## Experiment name
+## Dining Philosopher's Problem
