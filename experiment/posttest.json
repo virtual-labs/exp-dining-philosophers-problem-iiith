@@ -2,38 +2,174 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is a common technique used to solve the Dining Philosopher problem?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Using semaphores to control chopstick access",
+        "b": "Assigning each philosopher an individual chopstick",
+        "c": "Letting philosophers eat whenever they want",
+        "d": "Increasing the number of philosophers"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Semaphores prevent race conditions and deadlocks by ensuring proper access to shared resources.",
+        "b": "Assigning each philosopher an individual chopstick would not solve the problem as philosophers still need two chopsticks to eat.",
+        "c": "Letting philosophers eat whenever they want would lead to race conditions and deadlock.",
+        "d": "Increasing the number of philosophers increases competition for chopsticks, making deadlock more likely."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which approach helps avoid deadlocks in the Dining Philosopher problem?",
+      "answers": {
+        "a": "Allowing all philosophers to eat simultaneously",
+        "b": "Picking up both chopsticks only if both are available",
+        "c": "Giving each philosopher three chopsticks",
+        "d": "Reducing the number of chopsticks"
+      },
+      "explanations": {
+        "a": "Allowing all philosophers to eat simultaneously could cause deadlock due to resource competition.",
+        "b": "Ensuring that both chopsticks are available before picking them up prevents deadlock.",
+        "c": "Giving each philosopher three chopsticks is impossible since there are only two shared chopsticks between neighbors.",
+        "d": "Reducing the number of chopsticks increases the likelihood of deadlock."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does the concept of 'hold and wait' mean in this problem?",
+      "answers": {
+        "a": "Philosophers must wait for both chopsticks before eating",
+        "b": "Philosophers hold one chopstick while waiting for the other",
+        "c": "Philosophers do not wait for chopsticks",
+        "d": "Philosophers eat without holding chopsticks"
+      },
+      "explanations": {
+        "a": "Waiting for both chopsticks at once is not typical of 'hold and wait'; it refers to holding one while waiting for the other.",
+        "b": "Hold and wait occurs when a philosopher holds one chopstick and waits for the other, increasing the risk of deadlock.",
+        "c": "Philosophers need to wait for chopsticks in order to eat.",
+        "d": "Philosophers need chopsticks to eat; they cannot eat without holding them."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How does an arbitrator solution prevent deadlocks?",
+      "answers": {
+        "a": "It removes chopsticks from the table",
+        "b": "It forces philosophers to take turns eating",
+        "c": "It allows multiple philosophers to eat at once",
+        "d": "It prevents philosophers from thinking"
+      },
+      "explanations": {
+        "a": "Removing chopsticks would make eating impossible.",
+        "b": "An arbitrator (controller) ensures that only a limited number of philosophers eat at a time, avoiding deadlocks.",
+        "c": "Allowing multiple philosophers to eat at once increases the chances of deadlock.",
+        "d": "Philosophers need to think between eating sessions."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the following synchronization methods can be used in the Dining Philosopher problem?",
+      "answers": {
+        "a": "Mutex locks",
+        "b": "CPU scheduling",
+        "c": "Disk allocation",
+        "d": "Virtual memory"
+      },
+      "explanations": {
+        "a": "Mutex locks ensure that only one philosopher can pick up a chopstick at a time, preventing race conditions.",
+        "b": "CPU scheduling manages process execution, not resource allocation in synchronization problems.",
+        "c": "Disk allocation is unrelated to the synchronization of shared resources.",
+        "d": "Virtual memory is a memory management technique, not a synchronization solution."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What happens in a starvation scenario?",
+      "answers": {
+        "a": "One philosopher never gets a chance to eat",
+        "b": "All philosophers eat at the same time",
+        "c": "The table runs out of food",
+        "d": "The chopsticks disappear"
+      },
+      "explanations": {
+        "a": "Starvation occurs when a philosopher is continuously denied resources due to improper scheduling.",
+        "b": "All philosophers eating simultaneously is unlikely due to resource constraints.",
+        "c": "The table running out of food is not part of the problem model.",
+        "d": "Chopsticks disappearing would not be part of the problem scenario."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What happens if a circular wait condition occurs?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "All philosophers eat successfully",
+        "b": "The philosophers get stuck in an infinite wait loop",
+        "c": "The system optimizes chopstick usage",
+        "d": "The philosophers share chopsticks"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Circular wait prevents successful eating.",
+        "b": "A circular wait leads to deadlock, where each philosopher waits indefinitely for a chopstick held by another.",
+        "c": "Circular wait reduces system efficiency instead of optimizing it.",
+        "d": "Philosophers cannot share chopsticks simultaneously."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How can deadlock be avoided in the Dining Philosopher problem?",
+      "answers": {
+        "a": "By allowing philosophers to pick up only one chopstick",
+        "b": "By ensuring that at most 4 philosophers try to eat at the same time",
+        "c": "By removing all chopsticks",
+        "d": "By making philosophers eat one at a time"
+      },
+      "explanations": {
+        "a": "Picking up only one chopstick would prevent eating.",
+        "b": "If only 4 philosophers can eat simultaneously, deadlock is prevented by ensuring at least one chopstick remains free.",
+        "c": "Removing all chopsticks would prevent any eating.",
+        "d": "Making philosophers eat one at a time would solve deadlock but is inefficient."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What role does fairness play in solving the Dining Philosopher problem?",
+      "answers": {
+        "a": "Ensures every philosopher gets equal eating opportunities",
+        "b": "Allows one philosopher to eat continuously",
+        "c": "Prevents philosophers from thinking",
+        "d": "Increases starvation"
+      },
+      "explanations": {
+        "a": "Fair scheduling ensures that no philosopher starves and that resources are allocated evenly.",
+        "b": "Allowing one philosopher to eat continuously creates starvation for others.",
+        "c": "Philosophers need to think between eating sessions.",
+        "d": "Fairness reduces, not increases, starvation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What scheduling approach can ensure starvation does not occur?",
+      "answers": {
+        "a": "First-Come-First-Serve (FCFS)",
+        "b": "Round Robin",
+        "c": "Random allocation",
+        "d": "No scheduling"
+      },
+      "explanations": {
+        "a": "FCFS can lead to starvation if one philosopher holds resources for too long.",
+        "b": "Round Robin ensures that each philosopher gets an equal chance to eat.",
+        "c": "Random allocation may increase starvation risk.",
+        "d": "No scheduling would cause chaos."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
-  ]
+  ]  
 }
