@@ -31,3 +31,4 @@
 
 10. **MIT OpenCourseWare - Synchronization and Dining Philosophers**  
    [https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-fall-2017/](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-fall-2017/)  
+0000
