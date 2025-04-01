@@ -14,20 +14,20 @@
 ---
 
 ## Online References  
-5. **Bounded Buffer Problem - GeeksforGeeks**  
-   [https://www.geeksforgeeks.org/operating-system-bounded-buffer-problem/](https://www.geeksforgeeks.org/operating-system-bounded-buffer-problem/)  
+5. **Dining Philosophers Problem - GeeksforGeeks**  
+   [https://www.geeksforgeeks.org/dining-philosopher-problem-using-semaphores/](https://www.geeksforgeeks.org/dining-philosopher-problem-using-semaphores/)  
 
-6. **Producer-Consumer Problem - Tutorialspoint**  
-   [https://www.tutorialspoint.com/producer-consumer-problem-in-operating-system](https://www.tutorialspoint.com/producer-consumer-problem-in-operating-system)  
+6. **Dining Philosophers Problem - Tutorialspoint**  
+   [https://www.tutorialspoint.com/dining-philosopher-problem-in-operating-system](https://www.tutorialspoint.com/dining-philosopher-problem-in-operating-system)  
 
-7. **Synchronization in Operating Systems - IBM Developer**  
-   [https://developer.ibm.com/tutorials/l-synchronization/](https://developer.ibm.com/tutorials/l-synchronization/)  
+7. **Concurrency Control: Dining Philosophers - IBM Developer**  
+   [https://developer.ibm.com/tutorials/l-concurrency-control/](https://developer.ibm.com/tutorials/l-concurrency-control/)  
 
-8. **Bounded Buffer & Semaphores - NPTEL Course (IIT Kharagpur)**  
+8. **Dining Philosophers Simulation - Stanford CS Course Notes**  
+   [https://cs.stanford.edu/courses/cs140/](https://cs.stanford.edu/courses/cs140/)  
+
+9. **Deadlock and Starvation in Dining Philosophers - NPTEL Course (IIT Kharagpur)**  
    [https://nptel.ac.in/courses/106105214](https://nptel.ac.in/courses/106105214)  
 
-9. **Concurrency and Synchronization in OS - MIT OpenCourseWare**  
+10. **MIT OpenCourseWare - Synchronization and Dining Philosophers**  
    [https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-fall-2017/](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-fall-2017/)  
-
-10. **Bounded Buffer Problem using Semaphores - Stanford CS Course Notes**  
-   [https://cs.stanford.edu/courses/cs140/](https://cs.stanford.edu/courses/cs140/)  
