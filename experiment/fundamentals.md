@@ -126,9 +126,3 @@ Continuous polling for chopstick availability increases **CPU load**.
 | **Banker's Algorithm** | Checks if resource allocation keeps system in a safe state. | Prevents deadlock by pre-evaluating future state. |
 
 ---
-
-## 6. Conclusion
-
-The Dining Philosophers Problem is a classic example of **resource allocation and synchronization challenges** in an operating system. It demonstrates how improper handling of shared resources can lead to **deadlocks, starvation, livelocks, and race conditions**.
-
-Operating systems apply advanced techniques like mutexes, semaphores, resource ordering, and priority handling to ensure that processes **share resources safely and fairly** without compromising system performance.

@@ -61,7 +61,7 @@ In **livelock**, processes continuously change their state in response to each o
 
 ### How Operating Systems Handle This Problem
 
-#### ✅ Resource Ordering
+#### Resource Ordering
 The OS enforces a **fixed order** for resource acquisition to prevent circular wait conditions.
 - A process must acquire the **disk drive** before the **network port**.
 - If it requests out of order, the OS denies the request.
@@ -71,7 +71,7 @@ The OS enforces a **fixed order** for resource acquisition to prevent circular w
 
 ---
 
-#### ✅ Semaphores and Mutexes
+#### Semaphores and Mutexes
 
 **Semaphores** and **mutexes** are used to synchronize access:
 - **Semaphore** controls how many processes can access a resource.
@@ -86,7 +86,7 @@ The OS enforces a **fixed order** for resource acquisition to prevent circular w
 
 ---
 
-#### ✅ Timeouts
+#### Timeouts
 
 The OS sets a **timeout** for resource acquisition.  
 If a process cannot acquire a resource within the timeout period:
@@ -101,7 +101,7 @@ Process A requests the **disk drive** → Waits for 5 seconds → If unavailable
 
 ---
 
-#### ✅ Priority Inversion Handling
+#### Priority Inversion Handling
 
 When a **low-priority process** holds a resource needed by a **high-priority process**, the OS temporarily increases the priority of the lower process to avoid blocking.
 
@@ -115,7 +115,7 @@ When a **low-priority process** holds a resource needed by a **high-priority pro
 
 ---
 
-#### ✅ Banker's Algorithm for Resource Allocation
+#### Banker's Algorithm for Resource Allocation
 
 The OS uses the **Banker's Algorithm** to check if allocating requested resources will lead to an unsafe state.
 
@@ -127,17 +127,6 @@ The OS uses the **Banker's Algorithm** to check if allocating requested resource
 **System remains in a safe state → Prevents deadlock.**
 
 ---
-
-### Conclusion
-
-The **Dining Philosophers Problem** is an elegant abstraction of real-world challenges in **resource allocation** and **process synchronization**.  
-Modern operating systems implement various techniques such as **semaphores, mutexes, timeouts, resource ordering, and priority handling** to ensure:
-- Smooth sharing of resources
-- Deadlock and starvation prevention
-- Efficient process execution
-
-**Understanding this problem builds a strong conceptual foundation for advanced operating system concepts.**
-
 
 ## **Analysis**
 
@@ -184,3 +173,17 @@ Imagine that two philosophers are **fast thinkers** and **fast eaters**. They th
 ![dining-philosopher-example](images/DP5.png)
 
 The above shows a simple example of **starvation**. You can find more complicated thinking-eating sequences that also generate starvation.
+
+---
+
+
+### Conclusion
+
+The **Dining Philosophers Problem** is an elegant abstraction of real-world challenges in **resource allocation** and **process synchronization**.  
+Modern operating systems implement various techniques such as **semaphores, mutexes, timeouts, resource ordering, and priority handling** to ensure:
+- Smooth sharing of resources
+- Deadlock and starvation prevention
+- Efficient process execution
+
+**Understanding this problem builds a strong conceptual foundation for advanced operating system concepts.**
+
