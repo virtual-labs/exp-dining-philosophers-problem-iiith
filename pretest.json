@@ -1,0 +1,175 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the Dining Philosopher problem?",
+      "answers": {
+        "a": "A memory management problem",
+        "b": "A problem that models process synchronization in a concurrent system",
+        "c": "A CPU scheduling problem",
+        "d": "A disk scheduling problem"
+      },
+      "explanations": {
+        "a": "The Dining Philosopher problem is not related to memory management; it models process synchronization.",
+        "b": "The Dining Philosopher problem is a classic synchronization problem representing processes competing for shared resources.",
+        "c": "CPU scheduling issues are separate from the Dining Philosopher problem, which focuses on resource sharing.",
+        "d": "Disk scheduling problems involve managing disk I/O requests, not process synchronization."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many philosophers are there in the standard Dining Philosopher problem?",
+      "answers": {
+        "a": "2",
+        "b": "3",
+        "c": "5",
+        "d": "10"
+      },
+      "explanations": {
+        "a": "Two philosophers would be too simple to demonstrate complex synchronization issues.",
+        "b": "Three philosophers are not enough to showcase deadlock and synchronization challenges.",
+        "c": "The standard problem consists of five philosophers sitting around a table, each requiring two chopsticks.",
+        "d": "Ten philosophers would complicate the problem but the standard setup involves five philosophers."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What shared resources do philosophers compete for in the Dining Philosopher problem?",
+      "answers": {
+        "a": "Forks",
+        "b": "Knives",
+        "c": "Plates",
+        "d": "Chairs"
+      },
+      "explanations": {
+        "a": "Each philosopher needs two forks (or chopsticks) to eat, creating a resource allocation challenge.",
+        "b": "Knives are not used in the standard Dining Philosopher problem setup.",
+        "c": "Plates are not shared resources in the problem; chopsticks or forks are.",
+        "d": "Chairs are not part of the synchronization issue in the problem."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What synchronization issue can arise in the Dining Philosopher problem?",
+      "answers": {
+        "a": "Deadlock",
+        "b": "Buffer overflow",
+        "c": "Cache miss",
+        "d": "Thrashing"
+      },
+      "explanations": {
+        "a": "Deadlock occurs when each philosopher picks up one chopstick and waits indefinitely for the other.",
+        "b": "Buffer overflow occurs in data buffers, not in resource allocation problems.",
+        "c": "Cache misses are related to memory access, not process synchronization.",
+        "d": "Thrashing happens when excessive paging occurs, unrelated to process synchronization."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of solving the Dining Philosopher problem?",
+      "answers": {
+        "a": "To improve CPU performance",
+        "b": "To demonstrate memory allocation",
+        "c": "To prevent deadlocks and ensure proper resource allocation",
+        "d": "To improve sorting algorithms"
+      },
+      "explanations": {
+        "a": "CPU performance improvement is not the focus of this problem.",
+        "b": "Memory allocation is unrelated to resource sharing in the problem.",
+        "c": "The problem is used to study process synchronization and deadlock prevention techniques.",
+        "d": "Sorting algorithms are unrelated to process synchronization."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can a deadlock occur in the Dining Philosopher problem?",
+      "answers": {
+        "a": "All philosophers pick up their left chopstick and wait for the right one",
+        "b": "All philosophers eat at the same time",
+        "c": "No philosopher picks up chopsticks",
+        "d": "The number of chopsticks is increased"
+      },
+      "explanations": {
+        "a": "If every philosopher picks up their left chopstick and waits for the right one, no one can proceed, causing deadlock.",
+        "b": "Philosophers cannot eat simultaneously without violating mutual exclusion.",
+        "c": "If no philosopher picks up chopsticks, the system remains idle but not in deadlock.",
+        "d": "Increasing chopsticks could reduce contention but won’t directly prevent deadlock."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is NOT a solution to the Dining Philosopher problem?",
+      "answers": {
+        "a": "Allowing at most 4 philosophers to eat at once",
+        "b": "Using a strict ordering of resource allocation",
+        "c": "Allowing all philosophers to eat simultaneously",
+        "d": "Introducing an arbitrator to manage resource allocation"
+      },
+      "explanations": {
+        "a": "Limiting the number of philosophers eating reduces contention and helps avoid deadlock.",
+        "b": "Using a strict order helps prevent circular waiting and deadlock.",
+        "c": "Allowing all philosophers to eat simultaneously is not possible due to resource constraints.",
+        "d": "An arbitrator can resolve conflicts and prevent deadlock."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What type of problem is the Dining Philosopher problem an example of?",
+      "answers": {
+        "a": "Producer-Consumer problem",
+        "b": "Process synchronization problem",
+        "c": "Memory fragmentation problem",
+        "d": "Page replacement problem"
+      },
+      "explanations": {
+        "a": "The Producer-Consumer problem involves data sharing, not resource contention.",
+        "b": "The problem demonstrates process synchronization and resource allocation issues.",
+        "c": "Memory fragmentation relates to memory allocation, not process synchronization.",
+        "d": "Page replacement is a virtual memory issue."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is starvation in the context of the Dining Philosopher problem?",
+      "answers": {
+        "a": "When one philosopher never gets a chance to eat",
+        "b": "When all philosophers eat at the same time",
+        "c": "When all philosophers finish eating",
+        "d": "When the chopsticks are unlimited"
+      },
+      "explanations": {
+        "a": "Starvation occurs when one philosopher continuously fails to acquire resources while others repeatedly eat.",
+        "b": "Simultaneous eating would eliminate starvation, but is unlikely due to resource constraints.",
+        "c": "If all philosophers finish eating, the problem is resolved.",
+        "d": "Unlimited chopsticks would eliminate resource contention but would change the problem's nature."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is mutual exclusion in the Dining Philosopher problem?",
+      "answers": {
+        "a": "Allowing all philosophers to eat together",
+        "b": "Ensuring that only one philosopher accesses a chopstick at a time",
+        "c": "Allowing multiple philosophers to eat without restrictions",
+        "d": "Making philosophers eat in pairs"
+      },
+      "explanations": {
+        "a": "Simultaneous eating violates mutual exclusion.",
+        "b": "Mutual exclusion ensures that only one philosopher holds a chopstick at a time.",
+        "c": "Unrestricted eating would break the problem's core challenge.",
+        "d": "Eating in pairs doesn't address the core synchronization issue."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]  
+}
